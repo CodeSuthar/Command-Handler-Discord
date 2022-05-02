@@ -14,14 +14,14 @@ module.exports = {
 
   const PingEmbed = new MessageEmbed()
     .setAuthor({ name: "Pong", iconURL: client.user.displayAvatarURL()})
-    .setColor(client.embedColor)
+    .setColor(client.embedcolor)
     .addField("Bot Latency", `\`\`\`ini\n[ ${ping}ms ]\n\`\`\``, true)
     .addField("API Latency", `\`\`\`ini\n[ ${api_ping}ms ]\n\`\`\``, true)
     .setFooter({ text: `Requested by ${message.author.username}`, iconURL:  message.author.avatarURL({ dynamic: true })})
     .setTimestamp();
-
+ 
   await msg.edit({
-    content: "\`🏓\`",
+    content: `🏓\nBot Latency: \`\`\`[ ${ping}ms\`\`\`\nAPI Latency: \`\`\`[ ${api_ping}ms\`\`\``,
   })
  })
  }

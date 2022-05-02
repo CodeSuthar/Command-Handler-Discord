@@ -1,4 +1,5 @@
-const { MessageEmbed, Permissions } = require("discord.js");
+const { MessageEmbed } = require("discord.js");
+const dbprefix = require("../../Schema/prefix.js")
 
 module.exports = {
   name: "messageCreate",
@@ -6,6 +7,8 @@ module.exports = {
     if(!message.guild || message.author.bot) return;
     let prefix = client.prefix;
     const channel = message?.channel;
+    const ress =  await dbprefix.findOne({Guild: message.guildId})
+    if(ress && ress.Prefix)prefix = ress.Prefix;
     const mentionedtheclient = new RegExp(`^<@!?${client.user.id}>( |)$`);
     if (message.content.match(mentionedtheclient)) {
       const embed = new MessageEmbed()
