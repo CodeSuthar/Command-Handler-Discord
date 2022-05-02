@@ -33,9 +33,17 @@ module.exports = {
 
     if (command.minargs && command.minargs > 0 && args.length < command.minargs) {
       const errorembed = new MessageEmbed()
-      .setTitle("")
+      .setTitle("You didn't used ths command in a right way")
       .setColor("#e01e01")
-      .setDescription(`You need one of these permissions to use this command \`${command.userpermissions}\``)
+      .setDescription(`You need to use this command like ths example \`${command.usage}\``)
+      return message.channel.send({embeds: [errorembed]}).then(msg => {setTimeout(()=>{msg.delete().catch((e) => {console.log(e)})}, 10000)}).catch((e) => {console.log(e)});
+    }
+
+    if (command.maxargs && command.maxargs > 0 && args.length > command.maxargs) {
+      const errorembed = new MessageEmbed()
+      .setTitle("You didn't used ths command in a right way")
+      .setColor("#e01e01")
+      .setDescription(`You need to use this command like ths example \`${command.usage}\``)
       return message.channel.send({embeds: [errorembed]}).then(msg => {setTimeout(()=>{msg.delete().catch((e) => {console.log(e)})}, 10000)}).catch((e) => {console.log(e)});
     }
 
