@@ -47,6 +47,13 @@ module.exports = {
       return message.channel.send({embeds: [errorembed]}).then(msg => {setTimeout(()=>{msg.delete().catch((e) => {console.log(e)})}, 10000)}).catch((e) => {console.log(e)});
     }
 
+    if (command.owner && message.author.id !== `${client.ownerid}`) {
+      const errorembed = new MessageEmbed()
+      .setColor("#e01e01")
+      .setDescription(`Only <@${client.ownerid}> can use this command!`);
+      return message.channel.send({embeds: [errorembed]});
+    }
+
     try {
       command.execute(message, args, client, prefix);
     } catch (error) {
