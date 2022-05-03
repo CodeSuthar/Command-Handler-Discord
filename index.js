@@ -21,7 +21,7 @@ client.slashCommands = new Collection();
 client.aliases = new Collection();
 client.config = require("./config.js");
 client.embedcolor = client.config.bot.embedcolor;
-client.owner = client.config.bot.ownerid;
+client.ownerid = client.config.bot.ownerid;
 client.prefix = client.config.bot.prefix;
 client.password = client.config.bot.token;
 
@@ -87,5 +87,9 @@ readdirSync("./SlashCommands/").forEach((dir) => {
     data.push(SlashCommand);
   }
 });
+
+client.on("ready", async () => {
+  await client.application.commands.set(data).then(() => console.log(`Client Commands Are Registered.`)).catch((e) => console.log(e));
+})
 
 client.login(client.password)
