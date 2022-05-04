@@ -41,13 +41,13 @@ Install my-project with npm
 Clone the project
 
 ```bash
-  git clone https://github.com//Rtxeon/Command-Handler-V13-With-Custom-Prefix-For-Each-Guild
+  git clone https://github.com/Rtxeon/Command-Handler-V13-With-Custom-Prefix-For-Each-Guild
 ```
 
 Go to the project directory
 
 ```bash
-  cd discord-js-v13-handler
+  cd Command-Handler-V13-With-Custom-Prefix-For-Each-Guild
 ```
 
 Install dependencies
