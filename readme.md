@@ -4,6 +4,8 @@
   </a>
   
 # Discord-js-v13-handler
+  
+SPECIAL THANKS TO: ```APEX DEVELOPMENT & Raaz#2233```
 
 An advanced discord.js v13 command/events handler.
   
