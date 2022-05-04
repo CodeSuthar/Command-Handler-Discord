@@ -9,6 +9,7 @@
   "author": "Rtxeon",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.4.0",
     "discord.js": "^13.6.0",
     "mongoose": "^6.3.1",
     "node": "^17.7.2"
