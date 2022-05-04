@@ -8,4 +8,7 @@ module.exports = {
   database: {
     mongourl: process.env.connectingurl || "mongodb+srv://Zeon:Zeon@cluster0.610gv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
   },
+  logs: {
+    guildlog: "971339635366187008"
+  }
 }

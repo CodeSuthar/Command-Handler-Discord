@@ -24,6 +24,7 @@ client.config = require("./config.js");
 client.embedcolor = client.config.bot.embedcolor;
 client.ownerid = client.config.bot.ownerid;
 client.prefix = client.config.bot.prefix;
+client.log = client.config.logs;
 client.password = client.config.bot.token;
 
 //connectng mongodb
