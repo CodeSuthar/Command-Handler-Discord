@@ -1,7 +1,7 @@
 {
   "name": "command-handler-v13-with-custom-prefix-for-each-guild",
   "version": "1.0.0",
-  "description": "",
+  "description": "Discord.js V13 Slash Commands, Events , Button Handler",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
