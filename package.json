@@ -6,6 +6,13 @@
   "scripts": {
     "start": "node index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rtxeon/Command-Handler-V13-With-Custom-Prefix-For-Each-Guild"
+  },
+  "keywords": [
+    "discord", "discord command handler"
+  ],
   "author": "Rtxeon",
   "license": "ISC",
   "dependencies": {

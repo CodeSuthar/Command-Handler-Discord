@@ -41,7 +41,7 @@ Install my-project with npm
 Clone the project
 
 ```bash
-  git clone https://github.com/chethanyadav456/discord-js-v13-handler
+  git clone https://github.com//Rtxeon/Command-Handler-V13-With-Custom-Prefix-For-Each-Guild
 ```
 
 Go to the project directory
