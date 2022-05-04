@@ -1,14 +1,16 @@
 module.exports = {
   bot: {
-    token: process.env.token || "OTY5NTU4ODQwOTI2NDM3NDA2.YmvKCQ.MVIEeZb57nHCplqcbcNDg7KjQP8", //your bot token here, i recommend you to use env secrets
-    embedcolor: process.env.color || "RANDOM",
-    ownerid: process.env.ownerid || "880675703761272854",
-    prefix: process.env.prefix || "!",
+    token: process.env.token || "",
+    embedcolor: process.env.color || "",
+    ownerid: process.env.ownerid || "",
+    prefix: process.env.prefix || "",
   },
+
   database: {
-    mongourl: process.env.connectingurl || "mongodb+srv://Zeon:Zeon@cluster0.610gv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    mongourl: process.env.connectingurl || ""
   },
+
   logs: {
-    guildlog: "971339635366187008"
+    guildlog: ""
   }
 }
