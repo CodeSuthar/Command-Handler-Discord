@@ -26,13 +26,13 @@ module.exports = {
     let command = client.commands.get(cmd);
     if(!command) command = client.commands.get(client.aliases.get(cmd));
 
-    if (command.userpermissions && !message.member.permissions.has(command.userpermissions)) {
-      const errorembed = new MessageEmbed()
-      .setTitle("You don't have required permissions to use this command")
-      .setColor("#e01e01")
-      .setDescription(`You need one of these permissions to use this command \`${command.userpermissions}\``)
-      return message.channel.send({embeds: [errorembed]}).then(msg => {setTimeout(()=>{msg.delete().catch((e) => {console.log(e)})}, 10000)}).catch((e) => {console.log(e)});
-    }
+    if (!message.member.permissions.has(command.userPerms)) {
+      if(command.userPermsError === null || command.userPermsError === undefined) {
+        return message.reply(`You need  \`${command.userPerms}\` permissions to use this comand!`);
+      } else {
+        return message.reply(command.userPermError)
+      }
+    }    
 
     if (command.minargs && command.minargs > 0 && args.length < command.minargs) {
       const errorembed = new MessageEmbed()
