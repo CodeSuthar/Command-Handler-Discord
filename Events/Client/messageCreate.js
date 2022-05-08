@@ -30,9 +30,17 @@ module.exports = {
       if(command.userPermsError === null || command.userPermsError === undefined) {
         return message.reply(`You need  \`${command.userPerms}\` permissions to use this comand!`);
       } else {
-        return message.reply(command.userPermError)
+        return message.reply(command.userPermsError)
       }
-    }    
+    }
+    
+    if (!message.guild.me.permissions.has(command.botPerms)) {
+      if(command. botPermsError === null || command.botPermsError === undefined) {
+        return message.reply(`Oops :/ The bot need \`${command.botPerms}\` permissions to use this comand!`);
+      } else {
+        return message.reply(command.botPermsError)
+      }
+    }
 
     if (command.minargs && command.minargs > 0 && args.length < command.minargs) {
       const errorembed = new MessageEmbed()
