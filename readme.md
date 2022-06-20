@@ -5,7 +5,7 @@
   
 # Discord-js-v13-handler
   
-SPECIAL THANKS TO: APEX DEVELOPMENT & Raaz#2233
+SPECIAL THANKS TO: APEX DEVELOPMENT & Raaz#2233 & [Codes](https://discord.gg/ns8CTk9J3e) & [@Blacky](https://discord.com/users/959276033683628122)
 
 An advanced discord.js v13 command/events handler.
   
