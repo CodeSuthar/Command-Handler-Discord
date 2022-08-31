@@ -1,25 +1,31 @@
 {
-  "name": "command-handler-v13-with-custom-prefix-for-each-guild",
-  "version": "1.0.0",
-  "description": "Discord.js V13 Slash Commands, Events , Button Handler",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rtxeon/Command-Handler-V13-With-Custom-Prefix-For-Each-Guild"
-  },
-  "keywords": [
-    "discord", "discord command handler"
-  ],
-  "author": "Rtxeon",
-  "license": "MIT",
-  "dependencies": {
-    "colors": "^1.4.0",
-    "discord.js": "^13.6.0",
-    "moment": "^2.29.3",
-    "mongoose": "^6.3.1",
-    "node": "^17.7.2"
-  }
+    "name": "command-handler-discordjs-v14",
+    "version": "1.0.5",
+    "description": "An Advanced Discord Bot Slash Command Only Handler Made In DiscordJS V14 According To DiscordJS Guide",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Rtxeon/Command-Handler-Discord.git"
+    },
+    "keywords": [
+        "Command",
+        "Handler",
+        "DiscordJS",
+        "Discord",
+        "Bot"
+    ],
+    "author": "Rtxeon",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/Rtxeon/Command-Handler-Discord/issues"
+    },
+    "homepage": "https://github.com/Rtxeon/Command-Handler-Discord#readme",
+    "dependencies": {
+        "discord.js": "^14.3.0",
+        "fs": "^0.0.1-security",
+        "mongoose": "^6.5.4"
+    }
 }
