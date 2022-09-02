@@ -4,7 +4,7 @@
     "description": "An Advanced Discord Bot Slash Command Only Handler Made In DiscordJS V14 According To DiscordJS Guide",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
+        "start": "node index.js"
     },
     "repository": {
         "type": "git",
