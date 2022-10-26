@@ -16,7 +16,7 @@ module.exports = {
                 };
 
                 try {
-                    if (SlashCommands.owner && client.config.OwnerId.includes(interaction.user.id)) {
+                    if (SlashCommands.owner && !client.config.OwnerId.includes(interaction.user.id)) {
                         interaction.reply({ content: `Im, Not A Fool Bot, Only Owner Can Use This Commands` })
                     }
                     await SlashCommands.run(client, interaction);
