@@ -3,7 +3,7 @@ const client = new Client(
     Heart(GatewayIntentBits, Partials)
 );
 
-client.SlashCMD = new Collection;
+client.SlashCMD = new Collection();
 client.config = require("./config.js");
 
 client.rest.on('rateLimited', (info) => {
