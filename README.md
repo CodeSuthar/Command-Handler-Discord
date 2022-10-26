@@ -3,7 +3,7 @@
     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Favatars1.githubusercontent.com%2Fu%2F26492485%3Fs%3D280%26v%3D4&f=1&nofb=1" alt="Pbot-plus" width="200" height="200">
   </a>
   
-# Discord-js-v13-handler
+# Discord-js-v14-handler
 
 An Advanced Discord Bot Slash Command Only Handler Made In DiscordJS V14
   
